@@ -1,4 +1,4 @@
-import React, {View, Text, TouchableHighlight, AppRegistry, Component, StyleSheet} from 'react-native';
+import React, {View, Text, TouchableHighlight, AppRegistry, ScrollView , Component, StyleSheet} from 'react-native';
 import formatTime from 'minutes-seconds-milliseconds';
 
 
@@ -31,8 +31,11 @@ class Stopwatch extends Component {
 
                 </View>
 
-                <View style={[styles.footer, this.border('blue')]}>
-                    {this.laps()}
+
+                <View   style={[styles.footer]}>
+                  <ScrollView stickyHeaderIndices={[]}>
+                      {this.laps()}
+                  </ScrollView>
                 </View>
 
             </View>
@@ -173,5 +176,3 @@ let styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('stopwatch', () => Stopwatch);
-
-
