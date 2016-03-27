@@ -146,7 +146,6 @@ let styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'stretch',
-        // backgroundColor: 'rgba(21, 43, 57, 1)'
     },
     header: {
         flex: 3
