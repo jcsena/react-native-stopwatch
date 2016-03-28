@@ -42,6 +42,7 @@ class Stopwatch extends Component {
                         </View>
 
                     </View>
+                    
 
 
                     <View style={[styles.footer]}>
